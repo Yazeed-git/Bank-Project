@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+}
+
+header{
+    padding: 2em 3em;
+    /* background: grey; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 12px;
+}
+
+header nav ul{
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* background-color: green; */
+}
+
+header nav ul li{
+    /* margin-right: 2em; */
+    padding: 0 2em;
+}
+
+header nav ul li a{
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold; 
+}
+
+header nav ul li a.selected{
+    color: #68209b;
+}
+
+
+header .searchbox{
+    font-size: 12px;
+    border: 2px solid #bbb;
+    padding: .5em 1em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+    /* hidden label for accessibility purposes */
+.visuallyhidden{
+    visibility: hidden;
+    font-size: 0;
+}
+
+header .searchbox input{
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+}
+
+header .searchbox img{
+    width: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+/* hero section */
+
+.hero-section{
+    max-width: 100%;
+    height: 85vh;
+    background-image: url('/assets/img/hero_image.jpg');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    padding-left:4em;
+}
+
+.hero-section .hero-content{
+    max-width: 550px;
+}
+
+.hero-content .hero-title{
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+.hero-content a{
+    display: inline-block;
+    padding: 1em 1.3em;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-content .btn-cta{
+    background-color: #68209b;
+    color: #fff;
+    margin-right: 2em;
+}
+
+.hero-content .btn-sec{
+    color: #68209b;
+    border: 3px solid #68209b;
+}
+
+/*      Feature Section     */
+.ft-section{
+    display: flex;
+    justify-content: space-between;
+    background-color:#f9f9f9;
+    padding: 5em;
+}
+
+.ft-div{
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ft-div .ft-link{
+    color: #000;
+}
+
+.ft-div img{
+    display: block;
+    margin: 0 auto 1em;
+}
+
+
+/* learn more section */
+
+.lm-section{
+    display: flex;
+    /* justify-content: space-between; */
+    /* background-color: #eee; */
+    padding: 5em;
+}
+
+
+.lm-div{
+    /* border: 1px solid brown; */
+    padding: 1em;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lm-div1 img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.lm-div2 h2{
+    font-size: 2.5rem;
+}
+
+.lm-div2 p{
+    font-size: .8rem;
+    line-height: 1.6;
+    margin: 1.5em 0
+}
+
+.lm-div2 a{
+    font-size: .9rem;
+    text-decoration: underline;
+    color: #000;
+}
+
+
+/* complaint section */
+
+.cmp-section{
+    background-color: #a753ce;
+    padding: 6em 5em;
+    /* text-align: center; */
+}
+
+.cmp-section h2{
+    margin-bottom:1.5em;
+}
+
+.cmp-section .complaint-box{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.complaint-box input{
+    outline: none;
+    border: 2px solid #fff;
+    height: 60px;
+    width: 500px;
+    padding: 0 1em;
+}
+
+.complaint-box button{
+    outline: none;
+    border: 2px solid #fff;
+    height: 63px;
+    padding: 1em;
+    background: #a753ce;
+    cursor: pointer;
+}
+
+.complaint-box button img{
+    width: 40px;
+    height: 40px;
+}
